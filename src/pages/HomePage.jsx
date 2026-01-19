@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react'
-import Hero from '../components/sections/Hero/Hero'
-import Features from '../components/sections/Features/Features'
-import About from '../components/sections/About/About'
-import WaitlistForm from '../components/sections/Waitlist/WaitlistForm'
+import Hero from '../components/Home/sections/Hero'
+import Features from '../components/Home/sections/Features'
+import About from '../components/Home/sections/About'
+import WaitlistForm from '../components/Home/sections/WaitlistForm'
+import Mission from '../components/Home/sections/Mission'
 
 const Home = () => {
   const heroRef = useRef(null);
@@ -18,10 +19,11 @@ const Home = () => {
       <div id="home" ref={heroRef}>
         <Hero />
       </div>
+
       
-      {/* Other sections */}
       <Features />
       <About />
+      <Mission />
       <WaitlistForm />
     </div>
   )
