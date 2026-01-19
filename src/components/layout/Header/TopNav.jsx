@@ -1,5 +1,6 @@
 // src/components/layout/Header/TopNav.jsx
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { FaSearch, FaEnvelope, FaPhone } from "react-icons/fa";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
@@ -8,7 +9,6 @@ const TopNav = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [isMobile, setIsMobile] = useState(false);
 
-  // Check screen size for responsiveness
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -37,7 +37,7 @@ const TopNav = () => {
 
   return (
     <div className="w-full bg-white text-[#252B42] border-b border-gray-100">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-15">
         <div className="flex flex-col md:flex-row items-center justify-between py-3 md:py-4">
           {/* Contact Information */}
           <div className="w-full md:w-auto flex items-center justify-between md:justify-start mb-3 md:mb-0">
@@ -98,7 +98,7 @@ const TopNav = () => {
             )}
           </div>
 
-          {/* Desktop Search Bar - Perfectly aligned to the right */}
+          {/* Desktop Search Bar */}
           {!isMobile && (
             <div className="w-full md:w-auto flex justify-center md:justify-end">
               <form onSubmit={handleSearch} className="relative group">
