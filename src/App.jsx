@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Header from "./components/layout/Header/Header";
 import Footer from "./components/layout/Footer/Footer";
-import LandingPage from "./pages/HomePage";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
   return (
@@ -23,8 +23,8 @@ const App = () => {
         <Header />
         <main className="grow">
           <Routes>
-            <Route path="/" element={<LandingPage />} />
-            {/* Add more routes as needed */}
+            <Route path="/" element={<HomePage />} />
+            
           </Routes>
         </main>
         <Footer />
