@@ -1,18 +1,13 @@
 import React from "react";
-
-// Components
-import TopNav from "./components/layout/Header/TopNav";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import Header from "./components/layout/Header/Header";
 import Footer from "./components/layout/Footer/Footer";
-
-import LandingPage from "./pages/LandingPage";
-
-// Libraries
-import { Toaster } from "react-hot-toast";
+import LandingPage from "./pages/HomePage";
 
 const App = () => {
   return (
-    <>
+    <Router>
       <div className="min-h-screen flex flex-col">
         <Toaster
           position="top-right"
@@ -25,14 +20,16 @@ const App = () => {
             },
           }}
         />
-        <TopNav />
         <Header />
         <main className="grow">
-          <LandingPage />
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            {/* Add more routes as needed */}
+          </Routes>
         </main>
         <Footer />
       </div>
-    </>
+    </Router>
   );
 };
 
