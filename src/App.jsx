@@ -1,9 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import Header from "./components/layout/Header/Header";
-import Footer from "./components/layout/Footer/Footer";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicePage";
+import ProductDemoPage from "./pages/ProductDemoPage";
+import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   return (
@@ -24,7 +28,10 @@ const App = () => {
         <main className="grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/demo" element={<ProductDemoPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
         <Footer />
