@@ -4,6 +4,7 @@ import Features from '../features/Home/Features'
 import About from '../features/Home/About'
 import WaitlistForm from '../features/Home/WaitlistForm'
 import Mission from '../features/Home/Mission'
+import Challenge from '../features/Home/Challenge'
 
 const Home = () => {
   const heroRef = useRef(null);
@@ -63,6 +64,7 @@ const Home = () => {
       <Features />
       <About />
       <Mission />
+      <Challenge />
       <div id="waitlist">
         <WaitlistForm />
       </div>
