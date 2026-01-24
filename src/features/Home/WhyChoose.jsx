@@ -74,7 +74,7 @@ const WhyChoose = () => {
 
   return (
     <>
-      <section className="relative w-full min-h-screen flex flex-col overflow-hidden bg-[#0A1D37]">
+      <section className="relative w-full min-h-screen flex flex-col overflow-hidden bg-[#0A1D37] mt-20">
         <div className="w-full h-32 bg-[#020646] relative z-20" />
 
         <div className="absolute inset-0 z-0">

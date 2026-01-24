@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 const ReadyToVerify = () => {
   return (
     <section className="relative h-125 flex items-center justify-center overflow-hidden">
-      {/* Background Image with Parallax Effect 
-        'bg-fixed' keeps the image in place relative to the viewport
-      */}
+     
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
@@ -14,7 +12,6 @@ const ReadyToVerify = () => {
         }}
       />
 
-      {/* Blue Overlay - matching your screenshot's gradient vibe */}
       <div className="absolute inset-0 bg-[#0A1D37]/85 mix-blend-multiply" />
       <div className="absolute inset-0 bg-linear-to-r from-blue-900/40 to-transparent" />
 
