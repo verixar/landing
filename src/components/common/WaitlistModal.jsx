@@ -58,7 +58,7 @@ const WaitlistModal = ({ isOpen, onClose }) => {
 
     try {
       const SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbzGkdZ-Z20-rFen5xJ9QjU6qvvvGLU6E1a6F-EpQdLvsS1nPxLxLnRNNh1p8keJlRKz/exec";
+        "https://script.google.com/macros/s/AKfycbxyLVOQ4YYXmUh6JEaCUFi1IQFXf4E-uTePnN_Oo6FRjgC2ZkyTqEZf_4ivJe7JzUMx/exec";
 
       const response = await fetch(SCRIPT_URL, {
         method: "POST",
