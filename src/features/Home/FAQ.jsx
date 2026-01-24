@@ -69,7 +69,6 @@ const FAQ = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const currentFAQs = faqData[activeTab];
-  // Calculate pairs for the grid (2 questions per slide)
   const totalSlides = Math.ceil(currentFAQs.length / 2);
 
   const nextSlide = () => {
@@ -89,14 +88,12 @@ const FAQ = () => {
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-12 mb-12">
-          {/* Header */}
           <div className="max-w-lg">
             <h2 className="text-[#0A2540] text-4xl md:text-5xl font-bold leading-tight mb-8">
               FAQs: Your Questions Answered
             </h2>
           </div>
 
-          {/* Tab Switcher */}
           <div className="flex bg-gray-50 p-1.5 rounded-full border border-gray-100">
             {Object.keys(faqData).map((tab) => (
               <button
@@ -114,8 +111,7 @@ const FAQ = () => {
           </div>
         </div>
 
-        {/* Content Slider Area */}
-        <div className="relative min-h-[300px]">
+        <div className="relative min-h-75">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab + slideIndex}
