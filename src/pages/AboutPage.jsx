@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
 import Hero from "../components/common/Hero";
+import OurStory from "../features/About/OurStory";
+import WhatDrivesUs from "../features/About/WhatDrivesUs";
+import CoreValues from "../features/About/CoreValues";
+import MeetTheTeam from "../features/About/MeetTheTeam";
+import Mission from "../features/About/Mission";
+import TrustedBy from "../features/About/TrustedBy";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -55,7 +61,14 @@ const AboutPage = () => {
           },
         }}
       />
+      <OurStory />
+      <WhatDrivesUs />
+      <CoreValues />
+      <MeetTheTeam />
+      <Mission />
+      <TrustedBy />
     </div>
+
   );
 };
 
