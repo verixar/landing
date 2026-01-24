@@ -1,9 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Hero from "../components/common/Hero";
 import Features from "../features/Home/Features";
 import About from "../features/Home/About";
 import WhyChoose from "../features/Home/WhyChoose";
-import WaitlistForm from "../features/Home/WaitlistForm";
 import Mission from "../features/Home/Mission";
 import Challenge from "../features/Home/Challenge";
 import Solution from "../features/Home/Solution";
@@ -12,51 +11,34 @@ import Testimonial from "../features/Home/Testimonial";
 import ReadyToVerify from "../features/Home/ReadyToVerify";
 import FAQ from "../features/Home/FAQ";
 import WhatIsVerixar from "../features/Home/WhatIsVerixar";
+// Import the new Modal component
+import WaitlistModal from "../components/common/WaitlistModal"; 
 
 const Home = () => {
   const heroRef = useRef(null);
+  // State to control modal visibility
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Content specific to the Homepage
   const homeSlides = [
     {
-      image:
-        "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
-      description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      title: "Redefining Trust in Global Commerce.",
+      description: "At Verixar, we believe that transparency shouldn't be a luxury. We are building the world's most reliable infrastructure for instant insurance verification.",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Sed do eiusmod tempor incididunt ut labore et dolore.",
-      description:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus.",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Quis autem vel eum iure reprehenderit qui in ea voluptate.",
-      description:
-        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi.",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "At vero eos et accusamus et iusto odio dignissimos.",
-      description:
-        "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda.",
-    },
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      title: "Seamless Verification for All Assets.",
+      description: "From luxury vehicles to industrial equipment, our platform provides instant certainty for every high-value transaction.",
+    }
   ];
 
-  // Function to handle scroll for the "Join" button if needed
-  const scrollToWaitlist = () => {
-    const element = document.getElementById("waitlist");
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
+  // Helper functions for actions
+  const openModal = () => setIsModalOpen(true);
+ 
 
   return (
     <div className="relative">
@@ -67,15 +49,16 @@ const Home = () => {
           showArrow={true}
           primaryBtn={{
             text: "Join the Waitlist",
-            onClick: scrollToWaitlist,
+            onClick: openModal, // Trigger modal
           }}
           secondaryBtn={{
             text: "Request Demo",
-            onClick: () => console.log("Demo requested"),
+            // onClick: handleDemoRequest,
           }}
         />
       </div>
 
+      {/* 2. Main Content Sections */}
       <Features />
       <About />
       <Mission />
@@ -85,8 +68,14 @@ const Home = () => {
       <WhyChoose />
       <PathSelection />
       <Testimonial />
-      <ReadyToVerify />
+      <ReadyToVerify /> 
+      
       <FAQ />
+
+      <WaitlistModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
       
     </div>
   );

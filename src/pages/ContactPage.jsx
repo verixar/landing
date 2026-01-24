@@ -1,7 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../components/common/Hero";
+import WaitlistModal from "../components/common/WaitlistModal";
+import { FiMail, FiMapPin, FiMessageSquare } from "react-icons/fi";
 
 const ContactPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -38,17 +42,18 @@ const ContactPage = () => {
         showArrow={false}
         primaryBtn={{
           text: "Join the Waitlist",
-          onClick: () => {
-            const element = document.getElementById("waitlist-section");
-            element?.scrollIntoView({ behavior: "smooth" });
-          },
+          onClick: () => setIsModalOpen(true),
         }}
         secondaryBtn={{
           text: "Email Us",
-          onClick: () => {
-            window.location.href = "mailto:hello@verixar.com";
-          },
+          onClick: () => (window.location.href = "mailto:hello@verixar.com"),
         }}
+      />
+
+      {/* --- WAITLIST MODAL --- */}
+      <WaitlistModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
       />
     </div>
   );

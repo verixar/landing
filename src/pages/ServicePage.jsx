@@ -1,7 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../components/common/Hero";
+import WaitlistModal from "../components/common/WaitlistModal";
 
 const ServicesPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -39,21 +42,25 @@ const ServicesPage = () => {
 
   return (
     <div className="relative">
+      {/* Hero Section */}
       <Hero
         slides={servicesSlides}
         welcomeText="Our Services"
         showArrow={false}
         primaryBtn={{
           text: "Join the Waitlist",
-          onClick: () => {
-            const element = document.getElementById("waitlist-section");
-            element?.scrollIntoView({ behavior: "smooth" });
-          },
+          onClick: () => setIsModalOpen(true),
         }}
         secondaryBtn={{
           text: "Contact Us",
           onClick: () => console.log("Navigating to contact..."),
         }}
+      />
+
+      {/* --- Waitlist Modal --- */}
+      <WaitlistModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
       />
     </div>
   );
