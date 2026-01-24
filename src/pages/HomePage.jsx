@@ -8,6 +8,10 @@ import Challenge from "../features/Home/Challenge";
 import Solution from "../features/Home/Solution";
 import WhyChoose from "../features/Home/WHyChoose";
 import PathSelection from "../features/Home/PathSelection";
+import Testimonial from "../features/Home/Testimonial";
+import ReadyToVerify from "../features/Home/ReadyToVerify";
+import FAQ from "../features/Home/FAQ";
+import WhatIsVerixar from "../features/Home/WhatIsVerixar";
 
 const Home = () => {
   const heroRef = useRef(null);
@@ -77,8 +81,13 @@ const Home = () => {
       <Mission />
       <Challenge />
       <Solution />
+      <WhatIsVerixar />
       <WhyChoose />
       <PathSelection />
+      <Testimonial />
+      <ReadyToVerify />
+      <FAQ />
+      
     </div>
   );
 };
