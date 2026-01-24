@@ -34,14 +34,13 @@ const ProductDemoPage = () => {
 
   return (
     <div className="relative">
-      {/* Hero with Modal Trigger */}
       <Hero
         slides={demoSlides}
         welcomeText="Product Demo"
         showArrow={false}
         primaryBtn={{
           text: "Join the Waitlist",
-          onClick: () => setIsModalOpen(true), // Opens the beautiful modal
+          onClick: () => setIsModalOpen(true), 
         }}
         secondaryBtn={{
           text: "Contact Sales",
@@ -49,18 +48,6 @@ const ProductDemoPage = () => {
         }}
       />
 
-      {/* Put your Demo Video or Dashboard Preview Sections Here */}
-      <section className="bg-white py-20 px-6">
-          <div className="max-w-6xl mx-auto text-center">
-              <h2 className="text-[#020A1E] text-3xl md:text-5xl font-bold mb-6">See it in action</h2>
-              <div className="aspect-video w-full bg-gray-100 rounded-3xl border border-gray-200 shadow-2xl flex items-center justify-center text-gray-400">
-                  {/* Replace with your video component or iFrame */}
-                  <p>Demo Video Player</p>
-              </div>
-          </div>
-      </section>
-
-      {/* The Global Modal */}
       <WaitlistModal 
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)} 

@@ -6,7 +6,6 @@ import CoreValues from "../features/About/CoreValues";
 import MeetTheTeam from "../features/About/MeetTheTeam";
 import Mission from "../features/About/Mission";
 import TrustedBy from "../features/About/TrustedBy";
-// Import the modal
 import WaitlistModal from "../components/common/WaitlistModal";
 
 const AboutPage = () => {
@@ -65,7 +64,6 @@ const AboutPage = () => {
         }}
       />
 
-      {/* Narrative sections */}
       <OurStory />
       <WhatDrivesUs />
       <CoreValues />
@@ -73,7 +71,6 @@ const AboutPage = () => {
       <MeetTheTeam />
       <TrustedBy />
 
-      {/* The Global Waitlist Modal */}
       <WaitlistModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

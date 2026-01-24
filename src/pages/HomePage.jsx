@@ -11,12 +11,10 @@ import Testimonial from "../features/Home/Testimonial";
 import ReadyToVerify from "../features/Home/ReadyToVerify";
 import FAQ from "../features/Home/FAQ";
 import WhatIsVerixar from "../features/Home/WhatIsVerixar";
-// Import the new Modal component
 import WaitlistModal from "../components/common/WaitlistModal"; 
 
 const Home = () => {
   const heroRef = useRef(null);
-  // State to control modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
@@ -36,7 +34,6 @@ const Home = () => {
     }
   ];
 
-  // Helper functions for actions
   const openModal = () => setIsModalOpen(true);
  
 
@@ -49,7 +46,7 @@ const Home = () => {
           showArrow={true}
           primaryBtn={{
             text: "Join the Waitlist",
-            onClick: openModal, // Trigger modal
+            onClick: openModal, 
           }}
           secondaryBtn={{
             text: "Request Demo",
@@ -58,7 +55,6 @@ const Home = () => {
         />
       </div>
 
-      {/* 2. Main Content Sections */}
       <Features />
       <About />
       <Mission />

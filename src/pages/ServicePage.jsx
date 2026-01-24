@@ -42,7 +42,6 @@ const ServicesPage = () => {
 
   return (
     <div className="relative">
-      {/* Hero Section */}
       <Hero
         slides={servicesSlides}
         welcomeText="Our Services"
@@ -57,7 +56,6 @@ const ServicesPage = () => {
         }}
       />
 
-      {/* --- Waitlist Modal --- */}
       <WaitlistModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
