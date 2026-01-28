@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Hero from "../components/common/Hero";
 import WaitlistModal from "../components/common/WaitlistModal";
+import VerificationSolutions from "../features/Service/VerificationSolution";
+import ShopWithConfidence from "../features/Service/ShopWithConfidence";
+import HowItWorks from "../features/Service/HowItWorks";
+import ReadyToStart from "../features/Service/ReadyToStart";
+import CallToAction from "../features/Service/CallToAction";
 
 const ServicesPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,6 +65,11 @@ const ServicesPage = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
+      <VerificationSolutions />
+      <ShopWithConfidence />
+      <HowItWorks />
+      <ReadyToStart />
+      <CallToAction />
     </div>
   );
 };
