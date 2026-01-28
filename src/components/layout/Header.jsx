@@ -22,7 +22,7 @@ const Header = () => {
     { id: "/", label: "Home" },
     { id: "/about", label: "About" },
     { id: "/services", label: "Services" },
-    { id: "/demo", label: "Product Demo" },
+    // { id: "/demo", label: "Product Demo" },
     { id: "/contact", label: "Contact" },
   ];
 
