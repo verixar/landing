@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Hero from "../components/common/Hero";
 import WaitlistModal from "../components/common/WaitlistModal";
 import { FiMail, FiMapPin, FiMessageSquare } from "react-icons/fi";
+import ContactSection from "../features/Contact/ContactSection";
+import FAQSection from "../features/Contact/FAQSection";
 
 const ContactPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -55,6 +57,8 @@ const ContactPage = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
+      <ContactSection />
+      <FAQSection />
     </div>
   );
 };
