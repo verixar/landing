@@ -86,7 +86,7 @@ const Header = () => {
                     : "bg-white text-[#0056D6] hover:bg-gray-100"
                 }`}
               >
-                <span>Book a Demo</span>
+                <span>Sign up</span>
                 <FiArrowRight />
               </button>
             </nav>
@@ -157,7 +157,7 @@ const Header = () => {
                   className="flex items-center justify-center bg-[#0056D6] text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-blue-100 w-full"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <span>Book a Demo</span>
+                  <span>Sign up</span>
                   <FiArrowRight className="ml-2" />
                 </Link>
               </div>
