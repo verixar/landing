@@ -16,49 +16,50 @@ const Solution = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const solutionFeatures = [
-    {
-      id: 0,
-      title: "Automated Data Sync",
-      description:
-        "Keep insured item data up to date with scheduled uploads and zero manual work.",
-      icon: <FiUploadCloud className="text-blue-600 text-2xl" />,
-    },
-    {
-      id: 1,
-      title: "Live Verification Dashboard",
-      description:
-        "See verification activity, item status, and buyer interactions in real time.",
-      icon: <FiLayout className="text-blue-600 text-2xl" />,
-    },
-    {
-      id: 2,
-      title: "Fraud Risk Insights",
-      description:
-        "Spot expired or cancelled policies early to prevent fraudulent claims.",
-      icon: <FiPieChart className="text-blue-600 text-2xl" />,
-    },
-    {
-      id: 3,
-      title: "Instant Buyer Checks",
-      description:
-        "Let buyers instantly confirm if a second-hand item is currently insured.",
-      icon: <FiCheckCircle className="text-blue-600 text-2xl" />,
-    },
-    {
-      id: 4,
-      title: "Secure & Compliant",
-      description:
-        "Protect insurer data with encryption, access control, and audit logs.",
-      icon: <FiShield className="text-blue-600 text-2xl" />,
-    },
-    {
-      id: 5,
-      title: "Impact Reporting",
-      description:
-        "Measure verification volume, engagement, and fraud reduction clearly.",
-      icon: <FiBarChart2 className="text-blue-600 text-2xl" />,
-    },
-  ];
+  {
+    id: 0,
+    title: "Automated Data Sync",
+    description:
+      "Keep insured asset data up to date with scheduled syncs and no manual effort.",
+    icon: <FiUploadCloud className="text-blue-600 text-2xl" />,
+  },
+  {
+    id: 1,
+    title: "Live Verification Dashboard",
+    description:
+      "Monitor verification activity, item status, and buyer checks in real time.",
+    icon: <FiLayout className="text-blue-600 text-2xl" />,
+  },
+  {
+    id: 2,
+    title: "Fraud Risk Insights",
+    description:
+      "Detect expired or cancelled policies early to reduce fraudulent claims.",
+    icon: <FiPieChart className="text-blue-600 text-2xl" />,
+  },
+  {
+    id: 3,
+    title: "Instant Buyer Checks",
+    description:
+      "Enable buyers to instantly confirm whether a second-hand item is insured.",
+    icon: <FiCheckCircle className="text-blue-600 text-2xl" />,
+  },
+  {
+    id: 4,
+    title: "Secure & Compliant",
+    description:
+      "Safeguard insurer data with encryption, access controls, and audit logs.",
+    icon: <FiShield className="text-blue-600 text-2xl" />,
+  },
+  {
+    id: 5,
+    title: "Impact Reporting",
+    description:
+      "Track verification volume, engagement, and fraud reduction with clarity.",
+    icon: <FiBarChart2 className="text-blue-600 text-2xl" />,
+  },
+];
+
 
   useEffect(() => {
     const checkMobile = () => {
@@ -122,11 +123,11 @@ const Solution = () => {
             <div className="w-24 h-0.5 bg-[#FF5A1F] mb-8" />
 
             <p className="text-[#425466] text-lg leading-relaxed mb-12 max-w-xl">
-              We built a unified system that brings speed, accuracy, and trust
-              to insurance verification. From instant serial number checks to
-              advanced risk detection, our platform connects buyers and insurers
-              through one reliable source of truth.
-            </p>
+  Verixar simplifies insurance verification by turning complex checks into
+  instant answers. We help buyers make safer decisions and give insurers a
+  reliable way to share real-time policy status through one trusted system.
+</p>
+
 
             {/* Updated Sliding Features Section */}
             <div className="min-h-55">

@@ -9,13 +9,12 @@ const FeatureCard = ({ icon: Icon, title, description, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
-      
       whileHover={{ y: -10 }}
-      className="group relative flex flex-col items-center text-center p-10 border border-gray-200 bg-transparent transition-all duration-500 ease-in-out cursor-pointer hover:shadow-md min-w-75 md:min-w-full"
+      className="group relative flex flex-col items-center text-center p-10 border border-gray-200 bg-transparent transition-all duration-500 ease-in-out cursor-pointer hover:shadow-md h-full min-h-100"
     >
       <motion.div 
         whileHover={{ scale: 1.1 }}
-        className="w-20 h-20 bg-gray-50 rounded-2xl flex items-center justify-center mb-8 transition-all duration-500 group-hover:bg-[#0056D6]/5"
+        className="w-20 h-20 bg-gray-50 rounded-2xl flex items-center justify-center mb-8 transition-all duration-500 group-hover:bg-[#0056D6]/5 shrink-0"
       >
         <Icon className="text-3xl text-[#252B42] transition-colors duration-500 group-hover:text-[#0056D6]" />
       </motion.div>
@@ -24,11 +23,11 @@ const FeatureCard = ({ icon: Icon, title, description, index }) => {
         {title}
       </h3>
 
-      <p className="text-[#5D666F] text-base leading-relaxed mb-8">
+      <p className="text-[#5D666F] text-base leading-relaxed mb-8 grow">
         {description}
       </p>
 
-      <div className="flex items-center gap-2 text-[#FF5722] font-bold transition-all duration-500 group-hover:gap-4">
+      <div className="flex items-center gap-2 text-[#FF5722] font-bold transition-all duration-500 group-hover:gap-4 mt-auto">
         <span className="text-lg">Know more</span>
         <motion.div
           animate={{ x: [0, 5, 0] }}

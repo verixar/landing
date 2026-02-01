@@ -8,25 +8,26 @@ const Features = () => {
   const [width, setWidth] = useState(0);
 
   const featuresData = [
-    {
-      icon: FiEdit3,
-      title: "Enter Serial Number",
-      description:
-        "Simply type or scan the serial number of any item you want to verify. Our system accepts all standard serial number formats and instantly checks the item’s insurance status.",
-    },
-    {
-      icon: FiSearch,
-      title: "Instant Verification",
-      description:
-        "Our verification engine searches through millions of insurance records in milliseconds to find accurate matches. This ensures you get fast, reliable results every time.",
-    },
-    {
-      icon: FiBarChart2,
-      title: "Get Clear Status",
-      description:
-        "Receive a detailed report instantly, showing the item’s insurance status, policy information, and validity period. Everything you need to know is presented clearly.",
-    },
-  ];
+  {
+    icon: FiEdit3,
+    title: "Enter the Serial Number",
+    description:
+      "Enter the asset’s serial number to begin verification. Verixar supports standard serial formats across insured assets, making checks quick and straightforward.",
+  },
+  {
+    icon: FiSearch,
+    title: "Verify in Real Time",
+    description:
+      "Verixar connects directly with insurance data sources to confirm policy status in seconds, no manual calls, paperwork, or guesswork involved.",
+  },
+  {
+    icon: FiBarChart2,
+    title: "See the Verified Status",
+    description:
+      "Get a clear result showing whether the asset is insured, expired, or cancelled, along with relevant policy details you can trust.",
+  },
+];
+
 
   useEffect(() => {
     if (scrollRef.current) {

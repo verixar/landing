@@ -17,45 +17,45 @@ const Challenge = () => {
   const challengeData = [
     {
       id: 1,
-      title: "Unknown Status",
+      title: "Unknown Insurance Status",
       icon: <LuBrain />,
       description:
-        "Buyers currently lack a fast, reliable way to verify an item's insurance status before purchasing. This transparency gap forces them to rely on guesswork.",
+        "Buyers often have no reliable way to confirm whether an item is actively insured before purchase, forcing decisions based on incomplete information.",
     },
     {
       id: 2,
-      title: "Fraud Risk",
+      title: "High Fraud Exposure",
       icon: <LuMail />,
       description:
-        "When sellers misrepresent insurance coverage, buyers are left vulnerable to significant financial losses and unforeseen legal complications.",
+        "Misrepresented or cancelled policies leave buyers exposed to financial loss and legal risk once ownership changes hands.",
     },
     {
       id: 3,
-      title: "Trust Issues",
+      title: "Eroded Buyer Trust",
       icon: <LuShield />,
       description:
-        "A lack of transparency creates deep uncertainty, stifling buyer confidence during high-value transactions. Without verifiable data, critical deals stall.",
+        "Lack of verifiable insurance data creates uncertainty in high-value transactions, reducing buyer confidence and slowing deals.",
     },
     {
       id: 4,
-      title: "Verification Lag",
+      title: "Slow Verification",
       icon: <LuTimer />,
       description:
-        "Manual verification processes take days, causing friction in fast-moving markets where decisions need to be made in seconds.",
+        "Traditional verification relies on manual checks that take days, adding friction to markets that demand instant decisions.",
     },
     {
       id: 5,
-      title: "Data Silos",
+      title: "Fragmented Data Systems",
       icon: <LuDatabase />,
       description:
-        "Insurance data is often locked away in incompatible systems, making it nearly impossible for third parties to access accurate status updates.",
+        "Insurance records are stored across disconnected systems, making real-time access and validation difficult or impossible.",
     },
     {
       id: 6,
       title: "Ownership Disputes",
       icon: <LuScale />,
       description:
-        "Without a verified insurance trail, transferring ownership of high-stakes assets often leads to disputes between buyers, sellers, and providers.",
+        "Without a trusted verification layer, insurance status disputes often arise during asset transfers between buyers, sellers, and insurers.",
     },
   ];
 

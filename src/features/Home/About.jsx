@@ -17,35 +17,35 @@ const About = () => {
     verixar: [
       {
         icon: FiZap,
-        title: "Instant Results",
-        desc: "Get accurate verification results in milliseconds, not days, so you can act with confidence instantly.",
+        title: "Instant Verification",
+        desc: "Verify insurance status in real time, so decisions are made in seconds — not days.",
       },
       {
         icon: FiGlobe,
-        title: "Global Coverage",
-        desc: "Access insurance databases across multiple countries for broader, more reliable verification.",
+        title: "Cross-Border Coverage",
+        desc: "Verify insured assets across supported regions through connected insurer networks.",
       },
       {
         icon: FiShield,
-        title: "Fraud Prevention",
-        desc: "Advanced algorithms detect suspicious patterns to help identify risky or fraudulent items early.",
+        title: "Built-in Fraud Protection",
+        desc: "Identify cancelled, expired, or suspicious policies before a transaction happens.",
       },
     ],
     traditional: [
       {
         icon: FiClock,
-        title: "Manual Delays",
-        desc: "Traditional methods often require 3-5 business days for manual document verification.",
+        title: "Slow Manual Processes",
+        desc: "Verification often takes days, relying on emails, calls, and manual document checks.",
       },
       {
         icon: FiAlertCircle,
-        title: "Limited Scope",
-        desc: "Restricted to local databases, making international verification nearly impossible.",
+        title: "Limited Reach",
+        desc: "Most systems only work locally, making cross-border verification unreliable.",
       },
       {
         icon: FiFileText,
-        title: "Vulnerable to Forgery",
-        desc: "Paper-based systems are easily manipulated and lack real-time digital cross-referencing.",
+        title: "Easy to Manipulate",
+        desc: "Paper documents and screenshots can be forged and lack real-time validation.",
       },
     ],
   };
@@ -64,23 +64,23 @@ const About = () => {
           >
             <div className="space-y-6 text-center lg:text-left">
               <p className="text-[#000000] text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Verixar revolutionizes how buyers and insurers verify insurance
-                status for second-hand electronics and valuable items. Our
-                platform processes verification requests securely and instantly,
-                helping prevent fraud and build trust in the resale marketplace.
+                Verixar simplifies how buyers and insurers verify insurance
+                status for second-hand electronics and high-value items. Our
+                platform delivers secure, real-time verification to reduce
+                uncertainty and prevent fraud in resale transactions.
               </p>
 
               <p className="text-[#000000] text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Buyers gain confidence before purchasing, while insurers reduce
-                losses caused by invalid claims on items that have already
-                changed ownership. Verixar acts as a neutral verification layer
-                that protects both sides.
+                Buyers gain confidence before completing a purchase, while
+                insurers avoid losses from claims tied to items that have
+                already changed ownership. Verixar serves as a neutral
+                verification layer that protects both sides.
               </p>
 
               <p className="text-[#000000] text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                We partner with forward-thinking insurance companies to provide
-                up-to-date policy status through secure data synchronization,
-                making insurance verification fast, reliable, and transparent.
+                By partnering directly with insurance providers, we sync policy
+                status securely and continuously, making insurance verification
+                fast, reliable, and transparent.
               </p>
             </div>
 
