@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import { FiArrowDown } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
-const Hero = ({ 
-  slides = [], 
-  welcomeText = "Welcome to Verixar", 
+const Hero = ({
+  slides = [],
+  welcomeText = "Welcome to Verixar",
   showArrow = true,
   // Pass objects for buttons: { text: "Label", onClick: () => {} }
   primaryBtn = { text: "Join the Waitlist", onClick: () => {} },
-  secondaryBtn = { text: "Request Demo", onClick: () => {} }
+  secondaryBtn = { text: "Request Demo", onClick: () => {} },
 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -23,7 +23,6 @@ const Hero = ({
 
   return (
     <div className="relative min-h-screen w-full flex items-center bg-[#020A1E] overflow-hidden mx-auto">
-      
       {/* --- BACKGROUND LAYER --- */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence mode="wait">
@@ -43,14 +42,13 @@ const Hero = ({
         </AnimatePresence>
 
         {/* Dark Overlays for Text Readability */}
-        <div className="absolute inset-0 bg-[#020A1E]/70 mix-blend-multiply z-20" />
-        <div className="absolute inset-0 bg-linear-to-r from-[#020A1E] via-[#020A1E]/60 to-transparent z-20" />
+        <div className="absolute inset-0 bg-[#020A1E]/60 mix-blend-multiply z-20" />
+        {/* <div className="absolute inset-0 bg-linear-to-r from-[#020A1E] via-[#020A1E]/60 to-transparent z-20" /> */}
       </div>
 
       {/* --- CONTENT LAYER --- */}
       <div className="relative z-30 container mx-auto px-6 md:px-10 pt-32 md:pt-40 pb-20">
         <div className="flex flex-col lg:flex-row items-center justify-start gap-8 lg:gap-6">
-          
           {/* Text Content */}
           <div className="flex-1 flex flex-col justify-center space-y-6 md:space-y-8 text-center lg:text-left max-w-3xl">
             <motion.span
@@ -83,7 +81,7 @@ const Hero = ({
             {/* Dynamic Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6 pt-4">
               {primaryBtn && (
-                <button 
+                <button
                   onClick={primaryBtn.onClick}
                   className="w-full sm:w-auto px-10 py-4 bg-white text-[#0056D6] rounded-sm font-regular text-lg hover:bg-gray-100 transition-all shadow-lg flex items-center justify-center cursor-pointer"
                 >
@@ -92,7 +90,7 @@ const Hero = ({
               )}
 
               {secondaryBtn && (
-                <button 
+                <button
                   onClick={secondaryBtn.onClick}
                   className="w-full sm:w-auto px-10 py-4 border-2 border-white/30 text-white rounded-sm font-regular text-lg hover:bg-white/10 transition-all cursor-pointer"
                 >
@@ -107,11 +105,11 @@ const Hero = ({
             <div className="hidden lg:flex justify-center lg:justify-start h-full">
               <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1, rotate: -10 }}
+                animate={{ opacity: 1, scale: 1, rotate: 80 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 src="/images/arrow.png"
                 alt="Decorative Arrow"
-                className="w-72 md:w-96 object-contain drop-shadow-2xl -ml-20 mt-10"
+                className="w-72 md:w-96 object-contain drop-shadow-2xl -ml-50 mt-40 lg:block hidden"
               />
             </div>
           )}
@@ -126,7 +124,9 @@ const Hero = ({
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`transition-all duration-300 rounded-full h-2 ${
-                currentSlide === index ? "w-10 bg-white" : "w-2 bg-white/50 hover:bg-white"
+                currentSlide === index
+                  ? "w-10 bg-white"
+                  : "w-2 bg-white/50 hover:bg-white"
               }`}
             />
           ))}

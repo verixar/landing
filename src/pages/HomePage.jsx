@@ -11,7 +11,7 @@ import Testimonial from "../features/Home/Testimonial";
 import ReadyToVerify from "../features/Home/ReadyToVerify";
 import FAQ from "../features/Home/FAQ";
 import WhatIsVerixar from "../features/Home/WhatIsVerixar";
-import WaitlistModal from "../components/common/WaitlistModal"; 
+import WaitlistModal from "../components/common/WaitlistModal";
 
 const Home = () => {
   const heroRef = useRef(null);
@@ -23,19 +23,32 @@ const Home = () => {
 
   const homeSlides = [
     {
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      image: "/hero/designers.avif",
       title: "Redefining Trust in Global Commerce.",
-      description: "At Verixar, we believe that transparency shouldn't be a luxury. We are building the world's most reliable infrastructure for instant insurance verification.",
+      description:
+        "Verixar is building a trusted layer for instant insurance verification, giving buyers and sellers clarity before high-value transactions happen.",
     },
     {
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Seamless Verification for All Assets.",
-      description: "From luxury vehicles to industrial equipment, our platform provides instant certainty for every high-value transaction.",
-    }
+      image: "/hero/happy-workers.avif",
+      title: "Know the Status Before You Buy.",
+      description:
+        "Check whether an asset is insured, active, or cancelled in seconds — using a simple serial number lookup.",
+    },
+    {
+      image: "/hero/technician.avif",
+      title: "One Platform. Real-Time Certainty.",
+      description:
+        "We connect directly with insurers to provide accurate, up-to-date policy information without manual checks or delays.",
+    },
+    {
+      image: "/hero/global-network.avif",
+      title: "Built for Scale, Security, and Speed.",
+      description:
+        "Verixar is designed to support global transactions securely, helping reduce fraud while protecting both buyers and insurers.",
+    },
   ];
 
   const openModal = () => setIsModalOpen(true);
- 
 
   return (
     <div className="relative">
@@ -46,7 +59,7 @@ const Home = () => {
           showArrow={true}
           primaryBtn={{
             text: "Join the Waitlist",
-            onClick: openModal, 
+            onClick: openModal,
           }}
           secondaryBtn={{
             text: "Request Demo",
@@ -64,15 +77,14 @@ const Home = () => {
       <WhyChoose />
       <PathSelection />
       <Testimonial />
-      <ReadyToVerify /> 
-      
+      <ReadyToVerify />
+
       <FAQ />
 
-      <WaitlistModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
+      <WaitlistModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
       />
-      
     </div>
   );
 };
