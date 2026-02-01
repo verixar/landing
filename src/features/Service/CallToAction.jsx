@@ -21,13 +21,13 @@ const CallToAction = () => {
               </div>
 
               <h2 className="text-[#020A1E] text-3xl md:text-5xl font-extrabold mb-8 tracking-tight leading-[1.1]">
-                Ready to Transform Your Hiring?
+                Ready to Verify with Confidence?
               </h2>
 
               <p className="text-[#131927] text-lg leading-relaxed mb-10 max-w-xl">
-                Sed egestas, ante et vulputate volutpat, eros pede semper est,
-                vitae luctus metus libero eu augue. Morbi purus libero, faucibus
-                adipiscing, commodo quis, gravida id, est. Sed lectus.
+                Verixar gives buyers and insurers instant access to reliable
+                insurance verification. Eliminate uncertainty, reduce fraud, and
+                make smarter decisions with real-time policy data you can trust.
               </p>
 
               <div className="flex flex-wrap gap-4">

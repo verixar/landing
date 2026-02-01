@@ -5,65 +5,66 @@ import { FiChevronLeft, FiChevronRight, FiCheckCircle } from "react-icons/fi";
 const services = [
   {
     title: "Real-Time Insurance Verification",
-    desc: "Verify insurance coverage instantly using serial numbers, policy IDs, or asset references.",
+    desc: "Instantly confirm active insurance coverage using serial numbers, policy IDs, or asset references—no manual checks required.",
     features: [
-      "Sub-second verification",
-      "Multiple identifier support",
-      "Optimized for web & mobile",
-      "Minimal setup required",
+      "Sub-second verification responses",
+      "Support for multiple asset identifiers",
+      "Optimized for web, mobile, and embedded systems",
+      "Fast onboarding with minimal configuration",
     ],
   },
   {
-    title: "Developer-First API",
-    desc: "Integrate Verixar’s verification engine directly into your platform with a secure REST API.",
+    title: "Developer-First Verification API",
+    desc: "Embed Verixar’s insurance verification engine directly into your platform through a secure, scalable REST API.",
     features: [
-      "RESTful architecture",
-      "Clear, versioned documentation",
-      "Sandbox & production environments",
-      "Webhook notifications",
+      "RESTful, versioned API architecture",
+      "Clear and maintainable documentation",
+      "Dedicated sandbox and production environments",
+      "Event-driven webhooks for real-time updates",
     ],
   },
   {
     title: "Bulk & Batch Verification",
-    desc: "Verify large volumes of insurance records efficiently through CSV uploads or batch API requests.",
+    desc: "Verify high volumes of insurance records efficiently through automated batch requests or secure CSV uploads.",
     features: [
-      "CSV & batch processing",
-      "High-volume throughput",
-      "Structured verification reports",
-      "Asynchronous processing",
+      "CSV and batch API processing",
+      "Designed for high-throughput workloads",
+      "Structured and exportable verification reports",
+      "Asynchronous processing for large datasets",
     ],
   },
   {
     title: "Enterprise Security & Compliance",
-    desc: "Advanced security controls and compliance tooling for insurers, underwriters, and enterprise partners.",
+    desc: "Enterprise-grade security and compliance controls built for insurers, underwriters, and regulated organizations.",
     features: [
-      "Role-based access control",
-      "Audit logs & traceability",
-      "Custom SLAs",
-      "Enterprise support",
+      "Role-based access control (RBAC)",
+      "Comprehensive audit logs and traceability",
+      "Custom service-level agreements (SLAs)",
+      "Priority enterprise support",
     ],
   },
   {
     title: "Fraud Risk Intelligence",
-    desc: "Identify anomalies and high-risk insurance activity using intelligent verification signals.",
+    desc: "Detect suspicious insurance activity using intelligent verification signals and historical behavior analysis.",
     features: [
-      "Risk scoring signals",
-      "Anomaly detection",
+      "Dynamic risk-scoring signals",
+      "Anomaly and inconsistency detection",
       "Historical verification tracking",
-      "Cross-record correlation",
+      "Cross-record and asset correlation",
     ],
   },
   {
     title: "Global Data Synchronization",
-    desc: "Maintain consistent insurance verification across regions with real-time data synchronization.",
+    desc: "Ensure consistent insurance verification across regions with secure, real-time data synchronization.",
     features: [
-      "Cross-border data sync",
-      "GDPR-ready workflows",
-      "Multi-region support",
-      "Localized data sources",
+      "Cross-border policy data synchronization",
+      "GDPR-aware and privacy-first workflows",
+      "Multi-region infrastructure support",
+      "Integration with localized insurer data sources",
     ],
   },
 ];
+
 
 const VerificationSolutions = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

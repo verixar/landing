@@ -48,11 +48,11 @@ const WhatIsVerixar = () => {
                 Built on trust and security for Global Usage
               </h3>
               <p className="text-white text-lg leading-relaxed mb-10">
-                Our platform bridges the transparency gap by providing a secure,
-                decentralized network for instant insurance validation. Whether
-                across borders or local markets, we eliminate the guesswork from
-                high-value transactions with bank-grade security and real-time
-                data you can trust.
+                Verixar closes the transparency gap by delivering instant
+                insurance verification through a secure, decentralized network.
+                Whether across borders or within local markets, we remove
+                guesswork from high-value transactions using real-time data and
+                bank-grade security you can trust.
               </p>
 
               <button className="flex items-center gap-3 bg-white text-[#FF5A1F] px-8 py-3.5 rounded-lg font-bold hover:bg-gray-100 transition-all mb-20 group shadow-lg">

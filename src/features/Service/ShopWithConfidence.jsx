@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 const features = [
   {
     id: 1,
-    title: "Mobile-Friendly",
-    desc: "Verify items on the go using our mobile-optimized platform or scan barcodes directly.",
+    title: "Mobile-Ready Verification",
+    desc: "Verify insured assets instantly from any device, with a responsive interface built for real-world, on-the-go checks.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -24,8 +24,8 @@ const features = [
   },
   {
     id: 2,
-    title: "Fraud Protection",
-    desc: "Access insurance databases across multiple countries for broader, more reliable verification.",
+    title: "Built-In Fraud Defense",
+    desc: "Detect expired, cancelled, or mismatched policies through real-time insurer-linked verification.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -44,8 +44,8 @@ const features = [
   },
   {
     id: 3,
-    title: "Detailed Reports",
-    desc: "Get comprehensive verification reports including policy details and validity periods.",
+    title: "Verification Reports",
+    desc: "Access clear, structured verification results including coverage status, timestamps, and policy validity.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -64,8 +64,8 @@ const features = [
   },
   {
     id: 4,
-    title: "Free Basic Checks",
-    desc: "Start with free verification checks. Upgrade for advanced features and unlimited access.",
+    title: "Accessible Entry, Scalable Power",
+    desc: "Start with basic verification access, then scale into advanced insights, automation, and enterprise controls.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -83,6 +83,7 @@ const features = [
     ),
   },
 ];
+
 
 const ShopWithConfidence = () => {
   return (

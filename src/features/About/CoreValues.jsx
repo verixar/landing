@@ -1,58 +1,61 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import {
-  FiSearch,
+  FiShield,
   FiCpu,
   FiUsers,
   FiEye,
-  FiShield,
+  FiLock,
   FiCheckCircle,
+  FiZap,
+  FiGlobe,
 } from "react-icons/fi";
 
 const values = [
   {
     id: 1,
-    title: "Fairness",
-    icon: <FiSearch size={28} />,
+    title: "Trust",
+    icon: <FiShield size={28} />,
     content:
-      "Every candidate deserves an equal opportunity to be seen, valued, and chosen for what truly matters — their skills and unique perspectives.",
+      "Trust is the foundation of every verification. We provide a single, reliable source of truth that insurers, buyers, and partners can depend on with confidence.",
   },
   {
     id: 2,
-    title: "Innovation",
-    icon: <FiCpu size={28} />,
+    title: "Accuracy",
+    icon: <FiCheckCircle size={28} />,
     content:
-      "We leverage cutting-edge AI technology to address real-world hiring challenges, helping organizations discover top talent efficiently.",
+      "Every verification must be precise. Our systems are built to deliver accurate, real-time insurance validation without ambiguity or manual errors.",
   },
   {
     id: 3,
-    title: "Inclusion",
-    icon: <FiUsers size={28} />,
-    content:
-      "We're committed to building diverse teams that reflect the depth and richness of talent across the globe.",
-  },
-  {
-    id: 4,
     title: "Transparency",
     icon: <FiEye size={28} />,
     content:
-      "We believe in clear, honest communication in every interaction — fostering trust, accountability, and collaboration.",
+      "We remove uncertainty from high-value transactions by making insurance status clear, auditable, and instantly accessible to all authorized parties.",
+  },
+  {
+    id: 4,
+    title: "Security",
+    icon: <FiLock size={28} />,
+    content:
+      "Verixar is built with bank-grade security to protect sensitive asset and insurance data, ensuring privacy, integrity, and resilience at every layer.",
   },
   {
     id: 5,
-    title: "Integrity",
-    icon: <FiShield size={28} />,
+    title: "Efficiency",
+    icon: <FiZap size={28} />,
     content:
-      "Our approach to AI is guided by ethics and humanity — designed to respect privacy and eliminate bias.",
+      "Verification should be fast and frictionless. We streamline complex insurance checks into simple, instant workflows that save time and reduce risk.",
   },
   {
     id: 6,
-    title: "Reliability",
-    icon: <FiCheckCircle size={28} />,
+    title: "Global Reliability",
+    icon: <FiGlobe size={28} />,
     content:
-      "We deliver consistent, high-quality results that our partners can depend on for their most critical hiring decisions.",
+      "Designed for cross-border use, Verixar supports standardized verification across regions, enabling secure transactions in both local and global markets.",
   },
 ];
+
 
 const CoreValues = () => {
   const scrollRef = useRef(null);

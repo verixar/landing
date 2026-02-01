@@ -15,35 +15,36 @@ const ServicesPage = () => {
   }, []);
 
   const servicesSlides = [
-    {
-      image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Instant Insurance Verification for Buyers.",
-      description:
-        "Verixar allows buyers to instantly verify whether a second-hand item is currently insured before making a purchase, reducing risk and increasing confidence.",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Fraud Prevention for Insurance Companies.",
-      description:
-        "We help insurers prevent fraudulent claims on sold or transferred items by ensuring policy statuses are always up to date and verifiable.",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Automated Data Synchronization.",
-      description:
-        "Insurance companies securely sync policy data with Verixar using automated CSV-based integrations, ensuring accurate verification without manual work.",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Insightful Dashboards & Reporting.",
-      description:
-        "Insurers gain access to dashboards showing usage metrics, verification volume, and estimated fraud prevented, helping demonstrate real business value.",
-    },
-  ];
+  {
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    title: "Instant Insurance Verification for Buyers",
+    description:
+      "Buyers can instantly confirm whether a second-hand asset is actively insured before purchase, eliminating uncertainty and reducing transactional risk.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    title: "Fraud Prevention for Insurers",
+    description:
+      "Verixar helps insurance providers prevent fraudulent claims by ensuring policy status is always current, verifiable, and tied to the correct asset owner.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    title: "Automated Policy Data Synchronization",
+    description:
+      "Insurers securely synchronize policy data with Verixar through automated integrations, maintaining accurate verification without manual intervention.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    title: "Operational Insights & Reporting",
+    description:
+      "Comprehensive dashboards provide visibility into verification activity, usage trends, and estimated fraud reduction—turning data into measurable value.",
+  },
+];
+
 
   return (
     <div className="relative">

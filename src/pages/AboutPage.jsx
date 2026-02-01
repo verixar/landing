@@ -19,30 +19,30 @@ const AboutPage = () => {
     {
       image:
         "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Redefining Trust in Second-Hand Markets.",
+      title: "Trust Where It Matters Most",
       description:
-        "Verixar was created to solve a growing problem in the resale economy — uncertainty. We help buyers verify insurance status instantly.",
+        "Verixar was built to remove uncertainty from second-hand transactions by giving buyers a fast, reliable way to verify insurance status before purchase.",
     },
     {
       image:
         "https://images.unsplash.com/photo-1522071823991-b9671f99128f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Protecting Buyers. Empowering Insurers.",
+      title: "Built for Buyers and Insurers",
       description:
-        "Our platform acts as a neutral verification layer, protecting buyers from risky purchases while helping insurers prevent fraudulent claims.",
+        "We act as a neutral verification layer—helping buyers avoid risky purchases while enabling insurers to reduce fraud and misuse of policies.",
     },
     {
       image:
         "https://images.unsplash.com/photo-1556761175-129418cb2dfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Built for Scale and Reliability.",
+      title: "Designed to Scale Securely",
       description:
-        "Verixar is designed to process large volumes of verification requests securely, ensuring fast and reliable results globally.",
+        "Verixar handles high volumes of verification requests with speed, security, and reliability—built to grow across markets and regions.",
     },
     {
       image:
         "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "A Smarter Future for Insurance Verification.",
+      title: "The Future of Insurance Verification",
       description:
-        "By partnering with forward-thinking insurance companies, we enable real-time access to policy status for a safer ecosystem.",
+        "By working directly with insurers, we provide real-time policy status that creates a safer, more transparent resale ecosystem.",
     },
   ];
 

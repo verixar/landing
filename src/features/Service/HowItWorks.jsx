@@ -4,26 +4,27 @@ import { FiSearch, FiCpu, FiCheckCircle, FiExternalLink } from "react-icons/fi";
 
 const steps = [
   {
-    title: "Enter Serial Number",
-    desc: "Input the serial number or unique identifier of the item you want to verify through our web platform or API.",
+    title: "Enter Asset Identifier",
+    desc: "Enter the asset’s serial number or unique identifier via the Verixar web platform or API.",
     icon: <FiSearch size={24} />,
   },
   {
-    title: "Database Search",
-    desc: "Our system searches through millions of insurance records across multiple databases in real-time.",
+    title: "Real-Time Verification",
+    desc: "Verixar instantly checks synchronized insurance records across connected insurer databases.",
     icon: <FiCpu size={24} />,
   },
   {
-    title: "Instant Results",
-    desc: "Receive detailed verification results including insurance status, policy information, and validity period.",
+    title: "Verified Status Returned",
+    desc: "Get a clear, trusted result showing current insurance status, policy validity, and coverage details.",
     icon: <FiCheckCircle size={24} />,
   },
   {
-    title: "Take Action",
-    desc: "Make informed decisions based on accurate verification data. Download reports or integrate results.",
+    title: "Act with Confidence",
+    desc: "Proceed with the transaction, download a verification record, or programmatically consume results.",
     icon: <FiExternalLink size={24} />,
   },
 ];
+
 
 const HowItWorks = () => {
   return (

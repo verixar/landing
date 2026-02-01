@@ -17,21 +17,21 @@ const storyContent = [
     title: "Our Mission",
     icon: <FiBarChart2 className="text-white" size={20} />,
     content:
-      "Redefining Trust in Global Commerce. At Verixar, we believe that transparency shouldn't be a luxury. We are building the world's most reliable infrastructure for instant insurance verification.",
+      "To make insurance verification fast, reliable, and accessible. Verixar exists to remove uncertainty from high-value transactions by providing instant, trusted insurance status checks.",
   },
   {
     id: "vision",
     title: "Our Vision",
     icon: <FiTarget className="text-white" size={20} />,
     content:
-      "To become the global standard for asset validation. We envision a world where buyers and sellers can transact instantly across any border, confident that the insurance data is authentic.",
+      "We aim to become the global standard for insurance verification—where buyers and sellers can transact across borders with confidence, backed by real, verifiable data.",
   },
   {
     id: "values",
     title: "Our Values",
     icon: <FiHeart className="text-white" size={20} />,
     content:
-      "Security, Transparency, and Innovation. These pillars guide every line of code we write. We prioritize user privacy while ensuring data integrity available in the industry today.",
+      "Security, transparency, and reliability guide everything we build. We protect insurer data, respect user privacy, and ensure verification results can always be trusted.",
   },
 ];
 
@@ -87,15 +87,17 @@ const OurStory = () => {
               data-aos-delay="200"
             >
               <p>
-                Verixar was created to solve a growing problem in the
-                second-hand economy: uncertainty. Buyers often have no reliable
-                way to know whether an item is still insured before making a
+                Verixar was built to solve a growing problem in the second-hand
+                economy: uncertainty. Buyers often have no clear way to confirm
+                whether an item is still insured before committing to a
                 purchase.
               </p>
+
               <p>
-                Verixar bridges this gap by acting as a trusted verification
-                layer, enabling instant checks using serial numbers and working
-                directly with insurers to sync policy status securely.
+                We solve this by acting as a trusted verification layer—allowing
+                instant checks through serial numbers while working directly
+                with insurers to keep policy status accurate, secure, and up to
+                date.
               </p>
             </motion.div>
 
