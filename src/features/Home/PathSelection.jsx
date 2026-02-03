@@ -10,11 +10,11 @@ const PathSelection = () => {
       title: "For Buyers",
       icon: <FiUser size={24} />,
       points: [
-        "Instant insurance verification",
-        "Avoid cancelled or expired policies",
-        "Buy second-hand items with confidence",
-        "Quick sharing via WhatsApp or link",
-      ],
+      "Verify insurance status before completing a purchase",
+      "Confirm whether coverage is active, expired, or cancelled",
+      "Reduce uncertainty around insured goods",
+      "Access a single, trusted verification result",
+    ],
       image:
         "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000",
     },
@@ -22,10 +22,11 @@ const PathSelection = () => {
       title: "For Sellers & Marketplaces",
       icon: <FiRepeat size={24} />,
       points: [
-        "Build trust with verified listings",
-        "Reduce disputes and failed transactions",
-        "Increase buyer confidence and conversions",
-      ],
+      "Offer listings with verified insurance status",
+      "Reduce post-transaction disputes and claims",
+      "Provide buyers with independent verification results",
+      "Support safer, more transparent transactions",
+    ],
       image:
         "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1000",
     },
@@ -36,6 +37,7 @@ const PathSelection = () => {
         "Sync insured item data via CSV or API",
         "Track verification activity in real time",
         "Detect fraud from expired or cancelled policies",
+        "Support risk reduction without exposing sensitive data",
       ],
       image:
         "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1000",

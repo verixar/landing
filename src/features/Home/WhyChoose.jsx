@@ -15,27 +15,27 @@ const WhyChoose = () => {
 
   const features = [
     {
-      title: "Mobile-Friendly",
+      title: "Built for Insurance Workflows",
       description:
-        "Verify items on the go using our mobile-optimized platform or scan barcodes directly.",
+        "Verixar is designed to support underwriting, policy validation, and operational verification without disrupting existing insurance processes.",
       icon: <FiSmartphone className="text-white text-3xl" />,
     },
     {
-      title: "Fraud Protection",
+      title: "Extended Verification During Underwriting",
       description:
-        "Avoid purchasing items with cancelled or fraudulent insurance claims.",
+        "Enable additional verification checks beyond initial policy issuance, helping insurers maintain accurate coverage status over time.",
       icon: <FiShield className="text-white text-3xl" />,
     },
     {
-      title: "Detailed Reports",
+      title: "Clear, Auditable Verification Records",
       description:
-        "Get comprehensive verification reports including policy details and validity periods.",
+        "Every verification produces structured records that support audits, compliance reviews, and internal decision-making.",
       icon: <FiFileText className="text-white text-3xl" />,
     },
     {
-      title: "Free Basic Checks",
+      title: "Scales With Policy Volume",
       description:
-        "Start with free verification checks. Upgrade for advanced features and unlimited access.",
+        "From low-volume checks to large-scale verification activity, Verixar scales reliably as insurance operations grow.",
       icon: <FiCheckSquare className="text-white text-3xl" />,
     },
   ];

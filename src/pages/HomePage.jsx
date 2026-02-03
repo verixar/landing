@@ -71,13 +71,13 @@ const Home = () => {
       <Features />
       <About />
       <Mission />
-      <Challenge />
+      {/* <Challenge /> */}
       <Solution />
       <WhatIsVerixar />
       <WhyChoose />
       <PathSelection />
-      <Testimonial />
-      <ReadyToVerify />
+      {/* <Testimonial /> */}
+      {/* <ReadyToVerify /> */}
 
       <FAQ />
 

@@ -7,62 +7,61 @@ const faqData = {
     {
       id: 1,
       q: "What is Verixar?",
-      a: "Verixar is a verification platform that helps buyers instantly confirm whether a second-hand item is actively insured before purchase.",
+      a: "Verixar is an insurance verification platform that enables insurers to confirm whether a product or asset is actively insured when it appears outside the original point of sale.",
     },
     {
       id: 2,
-      q: "How does Verixar work?",
-      a: "We verify item insurance status by securely checking insurer-provided data using unique identifiers like serial numbers or policy references.",
+      q: "What problem does Verixar solve for insurers?",
+      a: "Verixar reduces insurance fraud by preventing cancelled, expired, or transferred policies from being reused or misrepresented during secondary transactions.",
     },
     {
       id: 3,
-      q: "Is the verification real-time?",
-      a: "Yes. Every check reflects the current insurance status at the moment the request is made.",
+      q: "How does insurance verification work?",
+      a: "Insurers provide Verixar with approved policy or asset identifiers. When a verification request is made, Verixar securely confirms the current insurance status in real time.",
     },
     {
       id: 4,
-      q: "Who can use Verixar?",
-      a: "Verixar is built for buyers, marketplaces, and insurance providers looking to reduce fraud and increase trust.",
+      q: "Is Verixar involved in underwriting or claims decisions?",
+      a: "No. Verixar operates strictly as a verification layer and does not issue policies, assess risk, or make underwriting or claims decisions.",
     },
   ],
 
   Support: [
     {
       id: 5,
-      q: "What if an item cannot be verified?",
-      a: "If an item isn’t found, it may not yet be synced by the insurer or may require further review.",
+      q: "What does it mean when a product cannot be verified?",
+      a: "An unverified result may indicate expired coverage, a cancelled policy, ownership transfer, or data that has not yet been synced by the insurer.",
     },
     {
       id: 6,
-      q: "Is my data secure on Verixar?",
-      a: "Yes. All data is encrypted in transit and access is strictly controlled to meet security and compliance standards.",
+      q: "How is insurer data protected?",
+      a: "Verixar does not expose sensitive policyholder data. All verification responses are controlled, encrypted, and limited to insurance status only.",
     },
     {
       id: 7,
-      q: "How do I get help or report an issue?",
-      a: "You can contact our support team via the platform or through our official support email.",
+      q: "Can insurers monitor verification activity?",
+      a: "Yes. Insurers can access reporting and monitoring tools to track verification volume, outcomes, and potential fraud signals.",
     },
   ],
 
   Contact: [
     {
       id: 8,
-      q: "How can I reach the Verixar team?",
-      a: "You can reach us through the contact form on our website or via email.",
+      q: "How can insurance companies work with Verixar?",
+      a: "Insurance providers can contact Verixar to discuss onboarding, data integration, and verification workflows.",
     },
     {
       id: 9,
-      q: "Do you offer partnerships or enterprise plans?",
-      a: "Yes. We work closely with insurers and platforms to provide custom integrations and scalable solutions.",
+      q: "Does Verixar support enterprise integrations?",
+      a: "Yes. Verixar supports enterprise-grade integrations via API or structured data exchange, depending on insurer requirements.",
     },
     {
       id: 10,
       q: "Where does Verixar operate?",
-      a: "Verixar operates globally through partnerships with insurance providers across multiple regions.",
+      a: "Verixar operates as a global verification layer and works with insurers across multiple regions, subject to local compliance requirements.",
     },
   ],
 };
-
 
 const FAQ = () => {
   const [activeTab, setActiveTab] = useState("General");

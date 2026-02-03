@@ -65,9 +65,9 @@ const About = () => {
             <div className="space-y-6 text-center lg:text-left">
               <p className="text-[#000000] text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 Verixar simplifies how buyers and insurers verify insurance
-                status for second-hand electronics and high-value items. Our
-                platform delivers secure, real-time verification to reduce
-                uncertainty and prevent fraud in resale transactions.
+                status across insured goods. Our platform provides secure,
+                real-time verification that reduces uncertainty and supports
+                confident transactions.
               </p>
 
               <p className="text-[#000000] text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
@@ -78,9 +78,9 @@ const About = () => {
               </p>
 
               <p className="text-[#000000] text-base md:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                By partnering directly with insurance providers, we sync policy
-                status securely and continuously, making insurance verification
-                fast, reliable, and transparent.
+                By working directly with insurance providers, we securely
+                synchronize policy status to ensure insurance verification
+                remains fast, reliable, and transparent.
               </p>
             </div>
 

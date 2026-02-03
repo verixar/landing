@@ -42,14 +42,15 @@ const Mission = () => {
                   We're on a mission to make insurance verification accessible,
                   instant, and reliable for everyone. At Verixar, we're building
                   a smarter way to verify insurance status — one that removes
-                  uncertainty, reduces fraud, and helps people make confident
-                  decisions before they buy.
+                  uncertainty, supports extended verification during
+                  underwriting, and strengthens trust across insured assets.
                 </p>
 
                 <p className="text-white text-lg md:text-xl leading-relaxed font-light">
                   Learn more about our journey, the problem we're solving, and
-                  the passionate team working behind the scenes to make secure
-                  verification available to all.
+                  the team working behind the scenes to make secure, real-time
+                  verification available at every stage of the insurance
+                  process.
                 </p>
               </div>
             </motion.div>
